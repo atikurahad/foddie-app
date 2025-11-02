@@ -1,0 +1,93 @@
+.variety-food-area *{box-sizing: border-box;
+margin: 0;
+padding: 0;}
+.variety-food-area{width: 90%;
+margin: 0 auto;}
+.variety-food-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* Responsive layout for smaller screens */
+@media screen and (max-width:768px) {
+.variety-food-heading{
+    margin-top: 100px !important;
+}
+.variety-foods{margin-top:40px !important;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.variety-food-card{
+    background-color: #F0F1EC;
+    border: 1.5px solid #06C167;
+padding: 32px 100px 32px 32px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+.variety-food-card-title{font-size: 32px;
+font-weight: 500;}
+.variety-food-card-desc{font-size: 16px;
+font-weight: 400;}
+.discover{display: flex;
+align-items: center;
+justify-content: space-around;
+text-decoration: none;
+color: #06C167;
+background-color: #F0EDE2;
+width: 148px;
+height: 42px;
+font-size: 18px;
+}
+.discover .icon{font-size: 12.2px;}
+}/* Responsive layout for larger screens */
+@media screen and (min-width:768px) {
+    .variety-food-area{
+        margin-top:130px !important;
+    }
+    .variety-food-heading{text-align: center;}
+.variety-foods{margin-top: 50px;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 0;
+}
+.variety-foods div{
+    aspect-ratio: 1/ 1;
+justify-content: center;
+align-items: center;
+}
+.box-5{order:6;
+}
+.box-6{order: 5;}
+.box-7{order: 8;}
+.box-8{order: 7;}
+.variety-food-card{
+    background-color: #F3FCF7;
+    border: 1.5px solid #06C167;
+padding: 32px 100px 32px 32px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+.variety-food-card-title{font-size: 32px;
+font-weight: 500;}
+.variety-food-card-desc{font-size: 16px;
+font-weight: 400;}
+.discover{display: flex;
+align-items: center;
+justify-content: space-around;
+text-decoration: none;
+color: #06C167;
+background-color: #E6F9F0;
+width: 148px;
+height: 42px;
+font-size: 18px;
+}
+.discover .icon{font-size: 12.2px;}
+.discover:hover {
+  color: #008f5e;
+  transform: translateX(5px);
+}
+}

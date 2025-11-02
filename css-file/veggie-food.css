@@ -1,0 +1,78 @@
+.veggie-food-area *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.veggie-food-area {
+    width: 90%;
+    margin: 0 auto;
+}
+/* Responsive layout for smaller screens */
+@media screen and (max-width:768px) {
+    .veggie-food-area{margin-top: 120px;}
+    .veggie-food-img{
+    background-color: #F0F1EC;
+width: 320px;
+height: 460px;
+  position: relative;
+}
+.veggie-food-img img{
+    width: 277px;
+    height: 489px;
+    position: relative;
+    bottom: 55px;
+    left: 23px;
+}
+ .veggie-food-heading{margin-top: 30px !important;}
+ .digit-area{margin-top: 40px;
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 40px;}
+.digit{color: #06C167;
+font-size: 40px;
+font-weight: 600;}
+.digit-author{margin-top: 12px;
+    font-size:15px ;
+font-weight: 400;}
+.promo-btn{
+    margin-top: 56px;
+}
+    
+}
+/* Responsive layout for larger screens */
+@media screen and (min-width:768px) {
+    .veggie-food-area{margin-top: 140px !important;}
+.veggie-food{display: flex;
+flex-direction: row-reverse;
+gap: 60px;
+align-items: center;
+
+}
+  .veggie-food-img{flex: 1;
+    background-color: #F3FAFB;
+width: 541px;
+height: 608px;
+display: flex;
+justify-content: center;
+}
+.veggie-food-img img{
+    width: 445px;
+    height: 513px;
+}
+.veggie-food-text{flex:1;}
+.veggie-food-title{margin-right: 90px !important;}
+ .digit-area{margin-top: 40px;
+    display: flex;
+gap: 86px;}
+.digit{color: #06C167;
+font-size: 40px;
+font-weight: 600;}
+.digit-author{margin-top: 12px;
+    font-size:15px ;
+font-weight: 400;}
+.promo-btn{
+    margin-top: 56px;
+    padding: 0 10px;
+}    
+}

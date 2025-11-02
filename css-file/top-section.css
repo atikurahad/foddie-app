@@ -1,0 +1,200 @@
+*{box-sizing: border-box;
+}
+    .top-section{
+        display: inline-block;
+        height: 750px;
+        background: linear-gradient(#F3FCF7 0 650px, transparent 650px 100%);
+    }
+
+.header-area{
+   max-width: 90%;
+   margin: 0 auto;
+}
+nav ul li a{ text-decoration: none;
+    color: #1D1D1FBF;
+font-size: 16px;}
+nav ul li {
+    list-style: none;}
+.header-title{
+    font-weight: 500; 
+    font-size: 32px;
+    color: #06C167;
+}
+/*hero-section-start*/
+
+.hero-right-side-img {
+  position: relative;
+  display: inline-block; /* ensures the ::after aligns properly */
+}
+
+
+.hero-bottom{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+gap: 30px;
+}
+.rating{background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 230px;
+    height: 53px;
+    padding: 8px 16px;
+    border-radius: 25px;
+font-size: 15px;
+font-weight: 500;
+}
+.profile{background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 230px;
+    height: 53px;
+    padding: 8px 16px;
+    border-radius: 25px;
+font-size: 15px;
+font-weight: 500;
+box-shadow: 0 4px 13px 0 #0000001A;}
+.fa-star{color: #06C167;}
+/* Responsive layout for smaller screens */
+@media screen and (max-width:768px) {
+header{display: flex; 
+   justify-content: space-between;
+   align-items: flex-start;
+}
+.navbar{display: flex;
+flex-direction: column;
+align-items: flex-end;
+margin-top: 30px;
+}
+nav{display: flex;
+flex-direction: column;
+align-items: center;
+}
+.navbar-menu{width: 50px;
+height: 41px;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 2px solid #06C167;}
+.navbar-menu .fa-bars{
+    color: #06C167;
+    font-size: 20px;}
+.nav-items{display: none;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+gap: 30px;
+margin-right: 60px;
+}
+.hero-left-side-top{text-align: center;}
+.hero-title{
+    font-size: 51px;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.hero-desc{
+    margin-bottom: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #1D1D1FBF;
+}
+.hero-right-side-img::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  right: -35px;
+  width: 176px;
+  height: 176px;
+  background-image: url("../images/Polcadot.png");
+  background-size: 174px 174px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  z-index: 1;
+}
+
+.hero-bottom{margin-top: 50px;}
+.hero-right-side-img img{width: 320.01px;
+height: 
+469.82px;}
+.hero-bottom img{width: 40%;}
+.hero-right-side-img{position: relative;}
+.hero-right-bottom{
+   position: absolute;
+   bottom: 0px;
+   left: 13%;
+
+
+}
+.hero-right-bottom .rating{
+    margin-bottom: 12px;
+}
+    
+}
+/* Responsive layout for larger screens */
+@media screen and (min-width:768px) {
+    header{display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-menu{display: none;}
+nav ul{display: flex;
+gap: 50px;
+}
+.hero{display: flex;
+    gap: 50px;
+align-items: center;
+justify-content: center;
+margin-top: 30px;
+}
+.hero-left-side-top{
+    padding-bottom: 180px;
+     padding-right: 170px;
+}
+    .hero-title{
+    font-size: 75px;
+    font-weight: 600;
+    margin-bottom: -2px;
+
+}
+.hero-desc{
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1D1D1FBF;
+}
+.hero-right-side-img::after {
+  content: '';
+  position: absolute;
+  bottom: 90px;
+  right: -35px;
+  width: 176px;
+  height: 176px;
+  background-image: url("../images/Polcadot.png");
+  background-size: 174px 174px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  z-index: 1;
+}
+
+.hero-bottom{width: 50%;
+position:absolute;
+top: 695px;
+width:48% ;
+}
+  .hero-right-side-img img{width: 468px;
+height: 634px;}
+.hero-right-side-img{margin-right: 40px;
+}
+.hero-right-side-img .rating{position: relative;
+bottom: 334px;
+left: -85px;}
+.hero-right-side-img .profile{position: relative;
+bottom: 487px;
+left: 277px;}
+}

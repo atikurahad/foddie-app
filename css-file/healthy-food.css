@@ -1,0 +1,70 @@
+.healthy-food-area *{box-sizing: border-box;
+padding:0;
+margin:0;}
+.healthy-food-area {
+    width: 90%;
+    margin: 0 auto;
+}
+.healthy-food-list ul li{list-style: none;
+    
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.fa-check{color: #06C167; font-size: 19.39px;}
+.list-desc{font-size: 16px;
+font-weight: 400;}
+
+.healthy-food-list ul{
+    display: flex;
+flex-direction: column;
+gap: 20px;
+}
+/* Responsive layout for smaller screens */
+@media screen and (max-width:768px) {
+  .healthy-food{display: flex;
+flex-direction: column;
+align-items: center;
+gap: 30px;
+}
+.healthy-food-img{
+    background-color: #F0F1EC;
+width: 320px;
+height: 413px;
+  position: relative;
+}
+.healthy-food-img img{
+    position: relative;
+    bottom: 35px;
+    left: 23px;
+}
+.healthy-food-list{
+margin-left: 30px !important;
+}
+  
+}
+
+/* Responsive layout for larger screens */
+@media screen and (min-width:768px) {
+    .healthy-food-area{ padding-top: 30px !important;}
+    .healthy-food{display: flex;
+        align-items: center;
+    gap: 90px;
+    }
+    .healthy-food-img{flex: 1;
+    background-color: #F3FAFB;
+width: 541px;
+height: 608px;
+display: flex;
+justify-content: center;
+}
+.healthy-food-img img{
+    width: 445px;
+    height: 513px;
+}
+.healthy-food-text{flex: 1;}
+.healthy-food-list{
+    margin-top: 20px!important;
+margin-left: 0;
+}
+}
