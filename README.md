@@ -1,6 +1,6 @@
 # Assignment : 2
 
-# Name : MD.Atikur Rahman Ahad
+# Name : Md.Atikur Rahman Ahad
 
 # Email: atikurahad@gmail.com
 
